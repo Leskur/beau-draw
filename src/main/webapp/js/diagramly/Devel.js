@@ -223,6 +223,7 @@ mxscript(drawDevUrl + 'js/diagramly/sidebar/Sidebar-Rack.js');
 mxscript(drawDevUrl + 'js/diagramly/sidebar/Sidebar-Signs.js');
 mxscript(drawDevUrl + 'js/diagramly/sidebar/Sidebar-Sitemap.js');
 mxscript(drawDevUrl + 'js/diagramly/sidebar/Sidebar-Sysml.js');
+mxscript(drawDevUrl + 'js/diagramly/sidebar/Sidebar-Test.js');
 mxscript(drawDevUrl + 'js/diagramly/sidebar/Sidebar-ThreatModeling.js');
 mxscript(drawDevUrl + 'js/diagramly/sidebar/Sidebar-UML25.js');
 mxscript(drawDevUrl + 'js/diagramly/sidebar/Sidebar-Veeam.js');
