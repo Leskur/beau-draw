@@ -1,0 +1,23 @@
+{
+  "name": "beau-draw",
+  "version": "1.0.0",
+  "main": "src/main/webapp/index.html",
+  "scripts": {
+    "start": "cd src/main/webapp && serve",
+    "build": "cd etc/build && ant",
+    "deploy": "cd src/main/webapp && vercel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leskur/beau-draw.git"
+  },
+  "author": "Leskur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Leskur/beau-draw/issues"
+  },
+  "homepage": "https://github.com/Leskur/beau-draw#readme",
+  "dependencies": {
+    "serve": "^12.0.1"
+  }
+}
