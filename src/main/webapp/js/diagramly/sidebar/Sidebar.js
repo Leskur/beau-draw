@@ -452,7 +452,7 @@
 	 */
 	Sidebar.prototype.init = function()
 	{
-		// Defines all entries for the sidebar. This is used in the MoreShapes dialog. Create screenshots using the savesidebar URL parameter and
+		// 定义侧边栏所有条目。 在更多图形 Dialog 中使用 . Create screenshots using the savesidebar URL parameter and
 		// http://www.alderg.com/merge.html for creating a vertical stack of PNG images if multiple sidebars are part of an entry.
 		this.entries = [{title: mxResources.get('standard'),
             			entries: [{title: mxResources.get('general'), id: 'general', image: IMAGE_PATH + '/sidebar-general.png'},
@@ -1033,7 +1033,7 @@
 		}
 		
 		this.addGeneralPalette(this.customEntries == null);
-		this.addMiscPalette(false);	
+		this.addMiscPalette(false);
 		this.addAdvancedPalette(false);
 		this.addBasicPalette();
 		this.addStencilPalette('arrows', mxResources.get('arrows'), dir + '/arrows.xml',
