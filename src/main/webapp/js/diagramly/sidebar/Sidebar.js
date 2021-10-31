@@ -1191,6 +1191,7 @@
 		this.addFluidPowerPalette();
 		this.addGMDLPalette();
 		this.addPidPalette(pids, dir);
+		this.addTestPalette();
 		this.addThreatModelingPalette();
 		this.addWebIconsPalette();
 		this.addWebLogosPalette();
