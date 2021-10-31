@@ -648,7 +648,7 @@ App.main = function(callback, createUi)
 				if (CryptoJS.MD5(content).toString() != 'b02227617087e21bd49f2faa15164112')
 				{
 					console.log('Change bootstrap script MD5 in the previous line:', CryptoJS.MD5(content).toString());
-					alert('[Dev] Bootstrap script change requires update of CSP');
+					// alert('[Dev] Bootstrap script change requires update of CSP');
 				}
 			}
 			
@@ -3651,7 +3651,7 @@ App.prototype.showSplash = function(force)
 	}
 	
 	var serviceCount = this.getServiceCount(true);
-	
+
 	var showSecondDialog = mxUtils.bind(this, function()
 	{
 		var dlg = new SplashDialog(this);
@@ -3669,7 +3669,16 @@ App.prototype.showSplash = function(force)
 				}
 			}), true);
 	});
-	
+
+	const createBlankDiagram = mxUtils.bind(this, function() {
+		console.log(this)
+		var prev = Editor.useLocalStorage;
+		this.createFile(this.defaultFilename + (EditorUi.isElectronApp? '.drawio' : ''), null, null, null, null, null, null,
+			urlParams['local'] != '1');
+		Editor.useLocalStorage = prev;
+	})
+	createBlankDiagram()
+	return;
 	if (this.editor.isChromelessView())
 	{
 		this.handleError({message: mxResources.get('noFileSelected')},
