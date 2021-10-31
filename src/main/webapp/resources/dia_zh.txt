@@ -725,6 +725,7 @@ takeOver=Take Over
 targetSpacing=目标间距
 template=模板
 templates=模板
+test=测试
 text=文本
 textAlignment=文本对齐
 textOpacity=字体不透明度
