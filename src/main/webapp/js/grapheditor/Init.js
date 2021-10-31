@@ -16,6 +16,7 @@ window.SAVE_URL = window.SAVE_URL || '/save';
 window.OPEN_URL = window.OPEN_URL || '/open';
 window.RESOURCES_PATH = window.RESOURCES_PATH || 'resources';
 window.RESOURCE_BASE = window.RESOURCE_BASE || window.RESOURCES_PATH + '/grapheditor';
+// 模板路径
 window.STENCIL_PATH = window.STENCIL_PATH || 'stencils';
 window.IMAGE_PATH = window.IMAGE_PATH || 'images';
 window.STYLE_PATH = window.STYLE_PATH || 'styles';
