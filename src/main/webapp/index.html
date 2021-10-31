@@ -262,6 +262,14 @@
 				mxForceIncludes = true;
 			}
 
+			// 开发模式文件指向本地
+			if (location.hostname == 'localhost' || location.hostname == '127.0.0.1') {
+				drawDevUrl = `${location.origin}/`;
+				geBasePath = `${location.origin}/js/grapheditor`;
+				mxBasePath = `${location.origin}/mxgraph`;
+				mxForceIncludes = true;
+			}
+
 			mxscript(drawDevUrl + 'js/PreConfig.js');
 			mxscript(drawDevUrl + 'js/diagramly/Init.js');
 			mxscript(geBasePath + '/Init.js');
