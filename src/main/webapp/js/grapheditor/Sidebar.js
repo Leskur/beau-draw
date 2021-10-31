@@ -2037,7 +2037,9 @@ Sidebar.prototype.addUmlPalette = function(expand)
 };
 
 /**
- * Creates and returns the given title element.
+ * 创建并返回指定的标题元素。
+ * @param label 标题
+ * @return {HTMLAnchorElement}
  */
 Sidebar.prototype.createTitle = function(label)
 {
@@ -3663,7 +3665,11 @@ Sidebar.prototype.createEdgeTemplateFromCells = function(cells, width, height, t
 };
 
 /**
- * Adds the given palette.
+ * 添加侧边栏面板
+ * @param id 组态 id
+ * @param title 面板
+ * @param expanded 是否展开
+ * @param fns
  */
 Sidebar.prototype.addPaletteFunctions = function(id, title, expanded, fns)
 {
@@ -3677,7 +3683,12 @@ Sidebar.prototype.addPaletteFunctions = function(id, title, expanded, fns)
 };
 
 /**
- * Adds the given palette.
+ * 添加 Palette
+ * @param id ID
+ * @param title 标题
+ * @param expanded 是否展开
+ * @param onInit 初始化后的回调
+ * @return {HTMLDivElement}
  */
 Sidebar.prototype.addPalette = function(id, title, expanded, onInit)
 {
