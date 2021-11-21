@@ -1196,6 +1196,7 @@
 		this.addWebIconsPalette();
 		this.addWebLogosPalette();
 		this.addSignsPalette(signs, dir);
+		this.addTubeLibrary();
 		// LATER: Check if conflicts with restore libs after loading file
 		this.showEntries();
 		
