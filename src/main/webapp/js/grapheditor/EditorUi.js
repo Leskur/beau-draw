@@ -3988,20 +3988,21 @@ EditorUi.prototype.createTabContainer = function()
 };
 
 /**
- * Creates the required containers.
+ * 创建所需的容器。
  */
 EditorUi.prototype.createDivs = function()
 {
 	this.menubarContainer = this.createDiv('geMenubarContainer');
 	this.toolbarContainer = this.createDiv('geToolbarContainer');
 	this.sidebarContainer = this.createDiv('geSidebarContainer');
+	// 右侧格式容器
 	this.formatContainer = this.createDiv('geSidebarContainer geFormatContainer');
 	this.diagramContainer = this.createDiv('geDiagramContainer');
 	this.footerContainer = this.createDiv('geFooterContainer');
 	this.hsplit = this.createDiv('geHsplit');
 	this.hsplit.setAttribute('title', mxResources.get('collapseExpand'));
 
-	// Sets static style for containers
+	// 设置容器样式
 	this.menubarContainer.style.top = '0px';
 	this.menubarContainer.style.left = '0px';
 	this.menubarContainer.style.right = '0px';
@@ -4025,6 +4026,7 @@ EditorUi.prototype.createDivs = function()
 	
 	if (!this.editor.chromeless)
 	{
+		// 创建编辑器底部控制器
 		this.tabContainer = this.createTabContainer();
 	}
 	else
@@ -4080,7 +4082,7 @@ EditorUi.prototype.createUi = function()
 		this.container.appendChild(this.sidebarContainer);
 	}
 	
-	// Creates the format sidebar
+	// 创建右侧面板
 	this.format = (this.editor.chromeless || !this.formatEnabled) ? null : this.createFormat(this.formatContainer);
 	
 	if (this.format != null)
